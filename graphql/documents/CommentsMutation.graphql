@@ -1,0 +1,21 @@
+mutation CreateComment($input: CommentCreateInput!) {
+  createComment(input: $input) {
+    id
+    postId
+    username
+    imageUrl
+    text
+    userId
+  }
+}
+
+mutation DeleteComment($id: ID!) {
+  deleteComment(id: $id) {
+    id
+    postId
+    username
+    imageUrl
+    text
+    userId
+  }
+}

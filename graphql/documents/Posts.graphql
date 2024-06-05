@@ -1,0 +1,57 @@
+query GetPosts {
+  getPosts {
+    id
+    userId
+    username
+    userImage
+    description
+    latitude
+    longitude
+    imageUrl
+    type
+    comments {
+      id
+      postId
+      username
+      imageUrl
+      text
+      userId
+    }
+  }
+}
+
+query GetPost($id: ID!) {
+  getPost(id: $id) {
+    id
+    userId
+    username
+    userImage
+    description
+    latitude
+    longitude
+    imageUrl
+    type
+    comments {
+      id
+      postId
+      username
+      imageUrl
+      text
+      userId
+    }
+  }
+}
+
+mutation CreatePost($input: PostCreateInput!) {
+  createPost(input: $input) {
+    id
+    userId
+    username
+    userImage
+    description
+    latitude
+    longitude
+    imageUrl
+    type
+  }
+}
