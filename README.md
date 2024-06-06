@@ -1,4 +1,4 @@
-This is a [react-native-expo](https://expo.dev/) project
+This is a [react-native-expo](https://expo.dev/) project paired with other programming utils.
 
 ## Getting started
 
